@@ -1,0 +1,28 @@
+PROCEDURE procedure_sum(var sum:INTEGER)
+VAR
+   s, x1,x2,y1,y2:INTEGER
+BEGIN
+x1*x2+y1*y2=sum
+IF (sum=0) THEN
+    write( "les deux vecteurs sont orthogonaux")
+ELSE
+    write ("les deux vecteurs ne sont pas orthogonaux")
+END_IF
+END
+
+
+
+FUNCTION function_sum(x1,x2,y1,y2) : return_INTEGER
+VAR
+     x1,x2,y1,y2:INTEGER
+BEGIN
+sum =x1*x2+y1*y2
+  
+    RETURN sum ;
+END
+s=function_sum 
+IF (s=0) THEN
+    write( "les deux vecteurs sont orthogonaux")
+ELSE
+  write ("les deux vecteurs ne sont pas orthogonaux")
+END_IF
